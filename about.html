@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Henry Oladipupo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">Henry Oladipupo</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+      <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>About Me</h1>
+
+    <section class="card">
+      <h2>Educational Background</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Institution</th>
+              <th>Qualification</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>University</td>
+              <td>Department of Computer Science</td>
+              <td>B.Sc. Computer Science (in view)</td>
+              <td>2025 &ndash; Present</td>
+            </tr>
+            <tr>
+              <td>Secondary</td>
+              <td>Senior Secondary School</td>
+              <td>WAEC / SSCE</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Primary</td>
+              <td>Primary School</td>
+              <td>First School Leaving Certificate</td>
+              <td>2018</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Career Aspirations</h2>
+      <p>My goal is to become a full-stack software engineer. I want to build applications that help students and small businesses in Nigeria work smarter. In the long term I hope to start my own technology company.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Technical Skills</h2>
+        <ul class="list">
+          <li>HTML5</li>
+          <li>CSS3 (Flexbox and Grid)</li>
+          <li>JavaScript</li>
+          <li>C++ basics</li>
+          <li>Git and GitHub</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Hobbies and Interests</h2>
+        <ul class="list">
+          <li>Playing football</li>
+          <li>Reading tech blogs</li>
+          <li>Playing chess</li>
+          <li>Listening to music</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Audio Greeting</h2>
+      <audio controls>
+        <source src="media/welcome.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Henry Oladipupo &middot; 2025/C/CSC/1099 &middot; COS 106 Term Project</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

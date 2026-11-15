@@ -1,0 +1,330 @@
+/* COS 106 Term Project - Henry Oladipupo */
+
+:root {
+  --primary: #1e3a8a;
+  --accent: #f59e0b;
+  --bg: #f5f7fb;
+  --text: #222;
+  --white: #fff;
+  --border: #d6dbe6;
+  --success: #15803d;
+  --error: #b91c1c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--primary);
+}
+
+/* Header and navigation */
+header {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+  background: var(--accent);
+  color: var(--text);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Layout */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 16px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1,
+h2 {
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Home page */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  flex-shrink: 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: var(--text);
+}
+
+/* Grid used for skills and projects */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project img {
+  border-radius: 6px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+}
+
+.project {
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+ul.list {
+  padding-left: 20px;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--accent);
+}
+
+.error {
+  color: var(--error);
+  font-size: 0.9rem;
+}
+
+.message {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.message.success {
+  color: var(--success);
+}
+
+/* Planner */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.task-list {
+  list-style: none;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.task-list li span {
+  flex: 1;
+}
+
+.task-list li.done span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-list input[type="checkbox"] {
+  width: auto;
+}
+
+.delete-btn {
+  background: var(--error);
+  color: var(--white);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+}

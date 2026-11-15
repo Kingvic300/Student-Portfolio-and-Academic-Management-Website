@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Screenshot of GPA calculator">
+  <rect width="640" height="400" fill="#0f1e3d"/>
+  <text x="40" y="60" fill="#f2a541" font-family="sans-serif" font-size="26" font-weight="bold">GPA Calculator</text>
+  <g font-family="sans-serif" font-size="15">
+    <rect x="40" y="86" width="360" height="36" fill="#1b2f5c"/>
+    <text x="56" y="109" fill="#c9d3ea">Course</text><text x="200" y="109" fill="#c9d3ea">Units</text><text x="300" y="109" fill="#c9d3ea">Grade</text>
+    <g fill="#fff">
+      <text x="56" y="152">COS 101</text><text x="200" y="152">3</text><text x="300" y="152">A</text>
+      <text x="56" y="192">MTH 101</text><text x="200" y="192">3</text><text x="300" y="192">B</text>
+      <text x="56" y="232">PHY 101</text><text x="200" y="232">2</text><text x="300" y="232">A</text>
+      <text x="56" y="272">GST 111</text><text x="200" y="272">2</text><text x="300" y="272">A</text>
+    </g>
+  </g>
+  <circle cx="520" cy="190" r="86" fill="none" stroke="#1b2f5c" stroke-width="18"/>
+  <circle cx="520" cy="190" r="86" fill="none" stroke="#f2a541" stroke-width="18" stroke-dasharray="486 541" transform="rotate(-90 520 190)"/>
+  <text x="520" y="200" fill="#fff" font-family="sans-serif" font-size="36" font-weight="bold" text-anchor="middle">4.50</text>
+  <text x="520" y="232" fill="#c9d3ea" font-family="sans-serif" font-size="14" text-anchor="middle">CGPA / 5.00</text>
+  <rect x="40" y="316" width="160" height="44" rx="8" fill="#f2a541"/><text x="120" y="344" fill="#0f1e3d" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Calculate</text>
+</svg>
